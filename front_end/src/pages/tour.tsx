@@ -35,7 +35,7 @@ const TourPage = () => {
           <img style={rounded} src={logo} alt="logo" width="100px" />
           <nav className='p-4 pt-6 pl-20'>
             <ul className='flex gap-12'>
-              <a href="">Du lịch hgjhgjh</a>
+              <a href="">Du lịch</a>
               <a href="">Vận chuyển</a>
               <a href="">Tin tức</a>
               <a href="">Khuyến mãi</a>
