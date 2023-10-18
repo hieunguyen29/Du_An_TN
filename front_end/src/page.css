@@ -9,7 +9,13 @@
 .content{
   margin: 40px;
   
+border: burlywood;
+}
 
+.home-page__title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #2d4271;
 }
 .product-list .slick-slide {
   display: flex;

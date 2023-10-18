@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import logo from '../img/logo.jpg';
 import bner from '../img/banner.png';
-import bnr from '../img/bnnn.png';
+import bnr from '../img/huy.webp';
 import bh from '../img/bh.webp';
 import hh from '../img/hh.webp';
 import sl from '../img/sl.webp';
@@ -20,6 +20,8 @@ import ee from '../img/3.webp';
 import rr from '../img/4.webp';
 import tt from '../img/5.webp';
 import yy from '../img/6.webp';
+import he from '../img/bbbbb.webp'
+import hq from '../img/aaaaa.webp'
 
 
 const rounded = {
@@ -60,6 +62,23 @@ const HomePage = () => {
     start:'Nơi khởi hành: TP. Hồ Chí Minh'
   
 }
+]
+const names =[
+  {
+    id: 1,
+      image: bnr,
+      
+  }, {
+    id: 1,
+      
+      image: hq,
+      
+  }, {
+    id: 1,
+      
+      image: he,
+      
+  }
 ]
   const images =[
     {
@@ -186,59 +205,33 @@ const HomePage = () => {
       details: 'Singapore 4 ngày 3 đêm (Một ngày tự do, Tặng vé vườn thực vật Flower Dome và Supertree Observation)- Đã giảm 1.000.000/ khách',
       code:'  Mã tour:vNNSGN192-037-051023QH-V ',
       start:'Nơi khởi hành: TP. Hồ Chí Minh'
-    },
-    {
-      id: 4,
-      name: 'Sóc Sơn',
-      image: bh,
-      price: 199.99,
-      details: 'Singapore 4 ngày 3 đêm (Một ngày tự do, Tặng vé vườn thực vật Flower Dome và Supertree Observation)- Đã giảm 1.000.000/ khách',
-      code:'  Mã tour:vNNSGN192-037-051023QH-V ',
-      start:'Nơi khởi hành: TP. Hồ Chí Minh'
-    },{
-      id: 5,
-      name: 'Nha Trang ',
-      image: cc,
-      price: 199.99,
-      details: 'Singapore 4 ngày 3 đêm (Một ngày tự do, Tặng vé vườn thực vật Flower Dome và Supertree Observation)- Đã giảm 1.000.000/ khách',
-      code:'  Mã tour:vNNSGN192-037-051023QH-V ',
-      start:'Nơi khởi hành: TP. Hồ Chí Minh'
     }
   ];
 
   return (
+
     <div className="bg-white rounded-lg shadow p-4">
       <div className="banner">
         <h1 className="text-2xl text-center font-bold mb-4">Welcome to PolyTour</h1>
       </div>
 
       <div className="menu flex items-center justify-between">
-        <div className="logo">
-          <img style={rounded} src={logo} alt="Logo" className=" w-18 h-12 " />
-        </div>
-        <ul className="flex">
-          <li className="mr-4">
-            <a href="/">Du lịch</a>
-          </li>
-          <li className="mr-4">
-            <a href="/about">Vận Chuyển</a>
-          </li>
-          <li className="mr-4">
-            <a href="/contact">Vietravel MICE</a>
-          </li>
-          <li className="mr-4">
-            <a href="/about">VietravelPlus </a>
-          </li>
-          <li className="mr-4">
-            <a href="/contact">Tin tức</a>
-          </li>
-          <li className="mr-4">
-            <a href="/contact">Liên hệ</a>
-          </li>
-        </ul>
+      <div className='flex'>
+          <img style={rounded} src={logo} alt="logo" width="70px" />
+          <nav className='font-semibold p-4 pt-6 pl-18'>
+            <ul className='flex text-[#2D4271] gap-12'>
+              <a href="/">PolyTour</a>
+              <a href="/tour">Tour</a>
+              <a href="/">Tin tức</a>
+              <a href="">Khuyến mãi</a>
+              <a href="/contact">Liên hệ</a>
+            </ul>
+          </nav>
+          </div>
         <div className="search flex items-center">
-  <input type="text" placeholder="Search..." className="border border-gray-400 px-2 py-1 rounded" />
-  <button className="bg-blue-500 text-white py-1 px-3 rounded ml-2">Search</button>
+  <input type="text" placeholder="Search..." className="border-yellow-300
+border-[3px] px-2 py-2  rounded" />
+  <button className="bg-blue-500 text-white py-2 px-3 rounded ml-2">Search</button>
 
   
 <div className="ml-2">
@@ -253,35 +246,69 @@ const HomePage = () => {
       </div>
 
       <div className='mt-5 mb-5'>
-        <img src={bnr} alt="" />
+      <Slider
+            className="product-list1 grid gap-4 grid-cols-1  "
+            dots={true}
+            infinite={true}
+            speed={500}
+            slidesToShow={1}
+            slidesToScroll={1}
+            responsive={[
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                },
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+            ]}
+          >
+            {names.map((name) => (
+              <div key={name.id} >
+                <img style={{height:'450px'}}
+                  className=""
+                  src={name.image}
+
+                />
+              </div>
+            ))}
+          </Slider>
       </div>
-      <div className="bg-white rounded-lg shadow p-4 mx-auto" style={{ width: '1100px' }}>
-      <div className="tour-form mt-2 flex items-center">
+      <div  className="bg-white rounded-lg shadow p-4 mx-auto" style={{ width: '1100px' }}>
+      <div  className="tour-form mt-2 flex items-center">
   <div className="flex items-center mr-4">
     <label htmlFor="arrivalDate" className="mr-2 text-gray-600">Ngày đến:</label>
-    <input type="date" id="arrivalDate" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
+    <input style={{borderColor:'red '}} type="date" id="arrivalDate" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
   </div>
 
   <div className="flex items-center mr-4">
     <label htmlFor="departureDate" className="mr-2 text-gray-600">Ngày đi:</label>
-    <input type="date" id="departureDate" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
+    <input style={{borderColor:'red '}} type="date" id="departureDate" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
   </div>
 
   <div className="flex items-center mr-4">
     <label htmlFor="destination" className="mr-2 text-gray-600">Nơi đến:</label>
-    <input type="text" id="destination" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
+    <input style={{borderColor:'red '}} type="text" id="destination" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
   </div>
 
   <div className="flex items-center mr-4">
     <label htmlFor="departure" className="mr-2 text-gray-600">Nơi đi:</label>
-    <input type="text" id="departure" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
+    <input style={{borderColor:'red '}} type="text" id="departure" className="border rounded px-2 py-1 focus:outline-none focus:border-blue-500 transition-colors duration-300" />
   </div>
-  <button className="bg-blue-500 text-white py-1 px-3 rounded ml-2">Search</button>
+  <button  className="bg-blue-500 text-white py-1 px-3 rounded ml-2">Search</button>
   </div>
 </div>
-      <h2 className='mt-5 mb-5 '>CHƯƠNG TRÌNH ƯU ĐÃI!</h2>
+      
       <div className="content">
         <div className="content">
+        <h2 className='mt-5 mb-5 home-page__title '>CHƯƠNG TRÌNH ƯU ĐÃI!!!</h2>
           <Slider
             className="product-list1 grid gap-4 grid-cols-1  "
             dots={true}
@@ -322,12 +349,13 @@ const HomePage = () => {
       {/*  */}
       <div className="content">
         <div className="content">
+        <h2 className='mt-5 mb-5 home-page__title '>CHƯƠNG TRÌNH PolyyTour!!!</h2>
           <Slider
             className="product-lista grid gap-4 grid-cols-1  "
             dots={true}
             infinite={true}
             speed={500}
-            slidesToShow={6}
+            slidesToShow={5}
             slidesToScroll={1}
             responsive={[
               {
@@ -359,8 +387,9 @@ const HomePage = () => {
         </div>
       </div>
       {/*  */}
-      <h2 className='mt-5 mb-5 '>ƯU ĐÃI TPUR GIỜ CHÓT!</h2>
+      
       <div className="content">
+      <h2 className='mt-5 mb-5 home-page__title'>ƯU ĐÃI TPUR GIỜ CHÓT!</h2>
         <div className="product-list grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <div key={product.id} className="bg-gray-100 p-4 rounded-lg flex flex-col items-center">
@@ -384,8 +413,8 @@ const HomePage = () => {
         </div>
       </div>
 {/*  */}
-<h2 className='mt-5 mb-5 '>ƯU ĐÃI TPUR GIỜ CHÓT!</h2>
-<div className="content">
+
+<div className="content"><h2 className='mt-5 mb-5 home-page__title'>ƯU ĐÃI TPUR GIỜ CHÓT!</h2>
   <div className="product-list overflow-x-auto">
     {sales.map((sale) => (
       <div key={sale.id} className="bg-gray-100 p-4 mt-5 rounded-lg flex items-center mx-4">
@@ -409,13 +438,13 @@ const HomePage = () => {
 </div>
 
 {/*  */}
-<h2 className='mt-5 mb-5 '>ĐIỂM ĐẾN CHO CẶP ĐÔI!</h2>
-      <div className="content">
+
+      <div className="content"><h2 className='mt-5 home-page__title mb-5 '>ĐIỂM ĐẾN CHO CẶP ĐÔI!</h2>
         <div className="product-list grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 ">
           {destinations.map((destination) => (
             <div key={destination.id} className="bg-#918d8d-100 p-4 rounded-lg flex flex-col items-center">
 
-              <img
+              <img style={{height:'160px'}}
                 className="mt-4 rounded-lg w-full h-40 object-cover"
                 src={destination.image}
                 

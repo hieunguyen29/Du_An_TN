@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Demo;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[Demo::class,'show']);
+Route::post('/',[Demo::class,'demo']);

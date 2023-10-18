@@ -34,6 +34,7 @@ const TourPage = () => {
         <div className='flex'>
           <img style={rounded} src={logo} alt="logo" width="100px" />
           <nav className='p-4 pt-6 pl-20'>
+
             <ul className='flex gap-12'>
               <a href="">Du lịch</a>
               <a href="">Vận chuyển</a>
@@ -168,11 +169,13 @@ const TourPage = () => {
         </aside>
 
         {/*conten-right*/}
+
         <article className='w-3/4'>
           <p className='text-center text-2xl font-semibold'>Kết quả tìm kiếm tour du lịch</p>
           <div className='py-5'><hr className='bg-black h-[1.5px]'/></div>
           <div className='grid grid-cols-3 gap-7'>
             <div className='py-4 bg-neutral-100 rounded-lg'>
+
               <img src={anh1} alt="anh1" className='h-[315px] w-max rounded-lg' />
               <p className='px-1'>22/09/2023 - 5N4Đ - Giờ đi: 05:20</p>
               <p className='font-bold py-2 px-1'>ĐÀ NẴNG - HUẾ - ĐẦM LẬP AN - LA VÀNG - ĐỘNG PHONG NHA & THIÊN ĐƯỜNG - KDL BÀ NÀ - CẦU VÀNG...</p>
@@ -201,6 +204,7 @@ const TourPage = () => {
               </div>
             </div>
             <div className='py-4 bg-neutral-100 rounded-lg'>
+
               <img src={anh2} alt="anh2" className='h-[315px] w-max rounded-lg' />
               <p className='px-1'>22/09/2023 - 5N4Đ - Giờ đi: 05:20</p>
               <p className='font-bold py-2 px-1'>Huế - La Vang - Động Thiên Đường -
@@ -230,6 +234,7 @@ const TourPage = () => {
               </div>
             </div>
             <div className='py-4 bg-neutral-100 rounded-lg'>
+
               <img src={anh3} alt="anh3" className='h-[315px] w-max rounded-lg' />
               <p className='px-1'>23/09/2023 - Trong ngày - Giờ đi: 16:00</p>
               <p className='font-bold py-2 px-1'>Trải nghiệm đặc sản: Tour xuyên rừng - KDL Đất Mũi Cà Mau - Áp dụng cho nhóm 6 khách trở lên </p>
@@ -244,6 +249,7 @@ const TourPage = () => {
               </div>
               {/* <p className='text-base font-medium pt-1'>Giá cũ: 7,990,000₫</p> */}
               {/* <div className='flex gap-16 pb-1'> */}
+
               <p className='text-lg font-semibold text-red-500 px-4'>1,190,000₫</p>
               {/* <div className='bg-red-400 py-2 px-5 rounded-xl text-white'>10% Giảm</div> */}
               {/* </div> */}

@@ -1,5 +1,6 @@
+import { Outlet } from "react-router-dom";
 const LayoutWebsite = () => {
-    return <div>LayoutWebsite</div>;
+    return <div>    <Outlet /></div>;
 };
 
 export default LayoutWebsite;
