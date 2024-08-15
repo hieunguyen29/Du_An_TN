@@ -1,0 +1,45 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .rating-stars {
+    display: flex;
+    gap: 2px;
+  }
+  
+  .star {
+    font-size: 25px;
+    color: gray;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  .mb-5 {
+    margin-bottom: 0.5rem !important;
+}
+.mt-\[-25px\] {
+    margin-top: 0px !important;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+  }

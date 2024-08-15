@@ -1,0 +1,91 @@
+/* style.css */
+
+.left {
+    border-radius: 10px;
+    width: 25%;
+    background-color: #fefdfd;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-right: 24px;
+    /* Thêm khoảng cách bên phải */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.ct {
+    text-align: center;
+    border-radius: 15px;
+}
+
+.ss {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left h1 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.bt {
+    background-color: rgb(150, 58, 58);
+    color: black;
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bt:hover {
+    background-color: blue;
+}
+
+
+
+.left .select-wrapper {
+    margin-bottom: 24px;
+}
+
+.left select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.left select:hover {
+    border-color: #ccc;
+    /* Thay đổi màu viền khi di chuột qua */
+}
+
+.left button {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.left .range-input:hover {
+    border-color: #ccc;
+    /* Thay đổi màu viền khi di chuột qua */
+}
+
+.left .radio-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.left .radio-wrapper input[type="radio"] {
+    margin-right: 8px;
+}
+.buttonHover:hover {
+  background-color: #3b82f6; /* Change the color to your desired hover color */
+  color: #ffffff; /* Change the text color to your desired hover color */
+  cursor: pointer;
+}

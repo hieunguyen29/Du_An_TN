@@ -1,0 +1,146 @@
+.table_tour {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expired-text {
+    color: red;
+    /* Red color for expired tours */
+}
+
+.active-text {
+    color: green;
+    /* Green color for active tours */
+}
+
+.table_tour th,
+.table_tour td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table_tour th {
+    background-color: #f2f2f2;
+}
+
+.select-dropdown {
+    width: 100%;
+    padding: 6px;
+}
+
+.select-dropdown {
+    width: auto;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.delete-button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    padding: 9px 10px;
+    margin-right: 5px;
+    background-color: #36f4ab;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ct-button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    background-color: #d1f436;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-form-item {
+    padding: 40px;
+    margin-bottom: 90px;
+}
+
+.ant-form .container {
+    margin-left: 200px;
+}
+
+.ant-form-item-has-success {
+    margin-bottom: 50px;
+}
+
+.image_ul {
+    margin-top: 20px;
+}
+
+/* Thiết lập các kiểu cho toàn bộ form */
+.tour-form {
+
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập kiểu cho các label */
+.ant-form-item-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Thiết lập kiểu cho các input và select */
+.ant-input,
+.ant-select-selector {
+    width: 100%;
+}
+
+/* Thiết lập kiểu cho button Thêm và Quay lại */
+
+/* Thiết lập kiểu cho button Thêm */
+.btn-button-sub .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    margin-right: 10px;
+}
+
+/* Thiết lập kiểu cho button Quay lại */
+.btn-button-sub .ant-btn-default {
+    background-color: #f0f0f0;
+    border-color: #d9d9d9;
+}
+
+/* Thiết lập kiểu cho container chứa các phần tử của form */
+.container {
+
+    justify-content: space-between;
+}
+
+/* Thiết lập kiểu cho các phần tử con trong container */
+.container>div {
+
+    margin-right: 20px;
+}
+
+/* Thiết lập kiểu cho số lượng tour */
+.number-tour .ant-input {}
+
+.upload-wrapper {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.custom-form-item .image_ul {
+    top: 0;
+}

@@ -13,6 +13,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('app:discountmessage')->everyMinute();
+        $schedule->command('app:dattour-command')->everyMinute();
+        $schedule->command('app:status-tour-command')->everyMinute();
     }
 
     /**

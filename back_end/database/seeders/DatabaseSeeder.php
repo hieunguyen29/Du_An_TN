@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\DatTour;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +20,32 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            HuongDanVienSeeder::class,
+            LoaiPhuongTienSeeder::class,
+            LoaiKhachSanSeeder::class,
+            LoaiTourSeeder::class,
+            DiaDiemSeeder::class,
+            TourSeeder::class,
+            LichTrinhSeeder::class,
+            TourKhachSanSeeder::class,
+            TourPhuongTienSeeder::class,
+            UserSeeder::class,
+            KhuyenMaiSeeder::class,
+            DatTourSeeder::class,
+            HoaDonSeeder::class,
+            HuongDanVienHoaDonSeeder::class,
+            news::class
+
+
+
+
+
+
+
+
+
+
+        ]);
     }
 }

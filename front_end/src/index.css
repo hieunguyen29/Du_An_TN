@@ -3,33 +3,160 @@
 @tailwind components;
 @tailwind utilities;
 
+/* component tailwind */
+@layer components{
+  .menu-items{
+    @apply inline-block border-b-4 border-white hover:border-black;
+  }
+  .mega-menu-items {
+    @apply inline-block hover:text-red-500 cursor-pointer px-[7px] text-sm text-gray-500;
+  }  
+  .mega-menu-title{
+    @apply  font-semibold text-xl mb-5 text-blue-800;
+  }
+  .max-withd{
+    @apply w-[1500px] container
+  }
+}
+
 /*detail*/
 .img-container {
-    position: relative;
-    display: inline-block;
-  }
-  .icon-overlay {
-    position: absolute;
-    top: 15%;
-    left:10%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 30px; 
-  }  
+  position: relative;
+  display: inline-block;
+}
 
-  /*book*/
-  
-  .hh{
-    border-radius: 10px 0 0 10px; /* Tạo hình tròn cho ảnh */
-  }
-  .rounded-image {
-    width: 100%; /* Điều chỉnh kích thước ảnh theo ý muốn */
-    height: 100%; /* Điều chỉnh kích thước ảnh theo ý muốn */
-    border-radius: 10px 0 0 10px; /* Tạo hình tròn cho ảnh */
-  }
+.icon-overlay {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
 
+  .hideText {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .showText {
+    max-height: 100px; /* or any value you want for max-height */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+  }
+  
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icon-button:hover {
+    color: blue; /* Màu khi hover */
+  }
   
   
-  
-  
-  
+  .eye-cursor {
+    cursor: pointer;
+  }
+/*book*/
+
+.hh {
+  border-radius: 10px 0 0 10px;
+  /* Tạo hình tròn cho ảnh */
+}
+
+.rounded-image {
+  width: 100%;
+  /* Điều chỉnh kích thước ảnh theo ý muốn */
+  height: 100%;
+  /* Điều chỉnh kích thước ảnh theo ý muốn */
+  border-radius: 10px 0 0 10px;
+  /* Tạo hình tròn cho ảnh */
+}
+
+.hideText {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.showText {
+  max-height: 100px;
+  /* or any value you want for max-height */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-button:hover {
+  color: blue;
+  /* Màu khi hover */
+}
+
+.profile .right .wrapper {
+  background: #fff;
+  border: 0.5px solid #d5d5d5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/-2);
+  margin-left: calc(var(--bs-gutter-x)/-2);
+}
+
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}

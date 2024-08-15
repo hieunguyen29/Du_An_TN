@@ -1,0 +1,195 @@
+.hidden {
+  display: none;
+}
+
+.container-detail {
+  max-width: 1320px;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-img :hover {
+  transform: scale(1.2);
+}
+
+.input-rate :focus {
+  border: 1px solid green;
+}
+
+.ant-row {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.ant-col {
+  text-align: left !important;
+}
+
+.ant-input :focus+.ant-col {
+  position: relative;
+  z-index: 1000;
+  top: 15px;
+  left: 12px;
+}
+
+.ant-form-item {
+  width: 50%;
+}
+
+.ant-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.btn-button-sub {
+  flex-direction: row !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-top: 150px !important;
+  gap: 30px 30px;
+}
+
+.ant-btn-button {
+  border: 1px solid;
+}
+
+.ant-btn-primary {
+  color: black !important;
+
+}
+
+.ant-btn-primary {
+  color: black !important;
+
+}
+
+.submit-click[type="submit"] {
+  background-color: blue;
+  color: white !important;
+
+}
+
+:where(.css-dev-only-do-not-override-amq5gd).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: white;
+  color: blue !important;
+  border: 1px solid blue;
+}
+
+/* .ant-form-item-control-input-content{
+margin-top: 80px;
+} */
+.upload-image {
+  position: absolute;
+  top: 0;
+}
+
+.btn-button-sub-pt {
+  position: absolute;
+  top: 100px;
+  left: -380px;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+.ant-row {
+  margin-top: 10px;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-form-item-control-input-content {}
+
+.new-class {
+  margin-top: 100px;
+}
+
+.add-class {
+  margin-top: 60px;
+}
+
+.ck-reset_all {
+  margin-top: 30px;
+}
+
+.number-tour {
+  margin-top: 80px;
+}
+
+.ant-form-item-label {
+  margin-top: 20px;
+}
+
+.role-user {
+  border: 1px solid blue;
+  background: white;
+  color: blue;
+
+}
+
+.form-css-role {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.role-form button:hover {
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+
+.ant-css-form {
+  width: 100% !important;
+}
+
+.ant-css-form>.ant-form-item {
+  width: 100% !important;
+}
+
+.btn-button-sub-role {
+  display: flex;
+}
+
+.btn-button-sub-hdv {
+  position: absolute;
+  top: 200px;
+  left: -380px;
+}
+
+.max-w-full .describe {
+  width: 1350px;
+  height: 800px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.max-w-full .describe::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+
+.max-w-full .describe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/ .max-w-full .describe::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.max-w-full .describe::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

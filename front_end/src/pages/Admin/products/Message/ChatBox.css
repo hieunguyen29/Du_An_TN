@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+}
+
+.chat-content {
+    display: flex;
+}
+
+.chat-sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.chat-participants {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chat-participants li {
+    margin-bottom: 5px;
+}
+
+.chat-participants li .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-content {
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.message-sender {
+    text-align: right;
+    margin-right: 10px;
+    color: #888;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 900px;
+    /* Thêm dòng này */
+}
+
+.chat-input input[type="submit"] {
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-participants {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    /* Số người dùng hiển thị ban đầu */
+    overflow-y: auto;
+    /* Cho phép cuộn chuột khi danh sách quá dài */
+}
+
+.chat-participants li {
+    margin-bottom: 5px;
+}
+
+.chat-participants li .user-card {
+    display: flex;
+    align-items: center;
+}
+
+.chat-participants li .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto; /* Thay đổi từ "scroll" thành "auto" */
+}
+
+.message-left {
+    float: left; /* Tin nhắn bên trái nằm bên trái */
+    clear: both; /* Xóa các đối tượng trước khi định vị tin nhắn */
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.message-right {
+    float: right; /* Tin nhắn bên phải nằm bên phải */
+    clear: both; /* Xóa các đối tượng trước khi định vị tin nhắn */
+    margin-bottom: 10px;
+    color: #888;
+}
